@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: darkcyan;
+    background-image: url(Assets/bg-pattern-top.svg), url(Assets/bg-pattern-bottom.svg);
+    background-position: -80% 120%, 180% -60%;
+    background-repeat: no-repeat, no-repeat;
+    font-family: 'Kumbh Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;   
+}
+
+.card{
+    background-color: white;
+    background-image: url(Assets/bg-pattern-card.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    display: grid;
+    height: 350px;
+    width: 320px;
+    border-radius: 3%;
+    box-shadow: -9px 9px 34px #2d3248, 9px -9px 34px #6a6f81;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.card > .Personal-Info > img{
+    display: flex;
+    margin: 90px auto;
+    margin-bottom: 0;
+    border-radius: 50%;
+    border: 4px solid white; 
+}
+
+h2, p{
+    padding: 5px;
+}
+
+.data{
+    margin-top: 15px;
+    text-align: center;  
+}
+
+.name, .age{
+    display: inline-block;
+    font-size: 18px;
+}
+
+.Personal-Info{
+    border-bottom: 1px solid hsla(0, 0%, 59%, 50%);
+}
+
+p{
+    color: hsl(0, 0%, 59%);
+}
+
+.age{
+    font-weight: 600;
+}
+
+.metrics{
+    justify-content: center;
+    display: flex;
+    grid-row: 3;
+}
+
+.followers,
+.likes,
+.photos{
+    margin: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.metrics > div > p{
+    font-size: 12px;
+}
+
+.metrics > div > h2{
+    font-size: 18px;
+}
+
